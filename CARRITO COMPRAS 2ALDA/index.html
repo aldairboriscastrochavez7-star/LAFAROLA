@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Carrito de Compras</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">ModaStyle</h1>
+            <div class="cart-toggle" id="cartToggle">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="section-title">EMPANADAS LA FAROLA</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Arab Empanada.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Arab Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FF6B6B;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #4ECDC4;" data-color="Turquesa"></button>
+                            <button class="color-option" style="background-color: #45B7D1;" data-color="Azul"></button>
+                        </div>
+                        <p class="product-description">Blusa de alta calidad con diseño moderno y cómodo ajuste. Perfecta para ocasiones casuales y semi-formales.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Blusa Elegante" data-price="29.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Beef Empanada.jpg" alt="Jeans clásicos para hombre con corte moderno y ajuste contemporáneo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Beef Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Oscuro"></button>
+                            <button class="color-option" style="background-color: #95A5A6;" data-color="Gris"></button>
+                            <button class="color-option" style="background-color: #F39C12;" data-color="Mostaza"></button>
+                        </div>
+                        <p class="product-description">Jeans de denim de alta calidad con corte moderno y ajuste cómodo. Duraderos y con estilo contemporáneo.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Jeans Clásicos" data-price="49.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Blue Cheese Empanada.jpg" alt="Vestido elegante para mujer con tejido fluido y patrón hermoso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blue Cheese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #9B59B6;" data-color="Púrpura"></button>
+                            <button class="color-option" style="background-color: #E74C3C;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #1ABC9C;" data-color="Verde Agua"></button>
+                        </div>
+                        <p class="product-description">Vestido elegante con estampado floral y tejido suave que fluye con elegancia. Ideal para eventos especiales.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Vestido Floral" data-price="59.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Caprese Empanada.jpg" alt="Chaqueta moderna para hombre con diseño elegante y aspecto premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Caprese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris Oscuro"></button>
+                            <button class="color-option" style="background-color: #16A085;" data-color="Verde Oscuro"></button>
+                        </div>
+                        <p class="product-description">Chaqueta de diseño contemporáneo con materiales de alta calidad y acabados premium. Abrigada y con estilo.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Chaqueta Moderna" data-price="79.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Chicken Empanada.jpg" alt="Camiseta casual para mujer con ajuste cómodo y diseño simple">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Chicken Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FFFFFF; border: 1px solid #eee;" data-color="Blanco"></button>
+                            <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #E67E22;" data-color="Naranja"></button>
+                        </div>
+                        <p class="product-description">Camiseta de algodón 100% con ajuste cómodo y diseño versátil. Perfecta para uso diario y combinaciones casuales.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Camiseta Básica" data-price="19.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Chimi Cheese Empanada.jpg" alt="Pantalones formales clásicos para hombre con corte elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Chimi Cheese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Marino"></button>
+                            <button class="color-option" style="background-color: #7D3C98;" data-color="Morado"></button>
+                            <button class="color-option" style="background-color: #1A5276;" data-color="Azul Oscuro"></button>
+                        </div>
+                        <p class="product-description">Pantalones de vestir con corte clásico y elegante confección. Ideales para ocasiones formales y de oficina.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Pantalones Formales" data-price="64.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Corn Empanada.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Corn Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FF6B6B;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #4ECDC4;" data-color="Turquesa"></button>
+                            <button class="color-option" style="background-color: #45B7D1;" data-color="Azul"></button>
+                        </div>
+                        <p class="product-description">Blusa de alta calidad con diseño moderno y cómodo ajuste. Perfecta para ocasiones casuales y semi-formales.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Blusa Elegante" data-price="29.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Saltena Empanada.jpg" alt="Jeans clásicos para hombre con corte moderno y ajuste contemporáneo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Saltena Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Oscuro"></button>
+                            <button class="color-option" style="background-color: #95A5A6;" data-color="Gris"></button>
+                            <button class="color-option" style="background-color: #F39C12;" data-color="Mostaza"></button>
+                        </div>
+                        <p class="product-description">Jeans de denim de alta calidad con corte moderno y ajuste cómodo. Duraderos y con estilo contemporáneo.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Jeans Clásicos" data-price="49.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Ham & Cheese Empanada.jpg" alt="Vestido elegante para mujer con tejido fluido y patrón hermoso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ham & Cheese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #9B59B6;" data-color="Púrpura"></button>
+                            <button class="color-option" style="background-color: #E74C3C;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #1ABC9C;" data-color="Verde Agua"></button>
+                        </div>
+                        <p class="product-description">Vestido elegante con estampado floral y tejido suave que fluye con elegancia. Ideal para eventos especiales.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Vestido Floral" data-price="59.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Onions & Cheese Empanada.jpg" alt="Chaqueta moderna para hombre con diseño elegante y aspecto premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Onions & Cheese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris Oscuro"></button>
+                            <button class="color-option" style="background-color: #16A085;" data-color="Verde Oscuro"></button>
+                        </div>
+                        <p class="product-description">Chaqueta de diseño contemporáneo con materiales de alta calidad y acabados premium. Abrigada y con estilo.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Chaqueta Moderna" data-price="79.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Mushroom & Cheese Empanada.jpg" alt="Camiseta casual para mujer con ajuste cómodo y diseño simple">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mushroom & Cheese Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FFFFFF; border: 1px solid #eee;" data-color="Blanco"></button>
+                            <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #E67E22;" data-color="Naranja"></button>
+                        </div>
+                        <p class="product-description">Camiseta de algodón 100% con ajuste cómodo y diseño versátil. Perfecta para uso diario y combinaciones casuales.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Camiseta Básica" data-price="19.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Pepperoni Empanada.jpg" alt="Pantalones formales clásicos para hombre con corte elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pepperoni Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Marino"></button>
+                            <button class="color-option" style="background-color: #7D3C98;" data-color="Morado"></button>
+                            <button class="color-option" style="background-color: #1A5276;" data-color="Azul Oscuro"></button>
+                        </div>
+                        <p class="product-description">Pantalones de vestir con corte clásico y elegante confección. Ideales para ocasiones formales y de oficina.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Pantalones Formales" data-price="64.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Spicy Beef Empanada.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Spicy Beef Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FF6B6B;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #4ECDC4;" data-color="Turquesa"></button>
+                            <button class="color-option" style="background-color: #45B7D1;" data-color="Azul"></button>
+                        </div>
+                        <p class="product-description">Blusa de alta calidad con diseño moderno y cómodo ajuste. Perfecta para ocasiones casuales y semi-formales.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Blusa Elegante" data-price="29.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Spicy Saltena Empanada.jpg" alt="Jeans clásicos para hombre con corte moderno y ajuste contemporáneo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Spicy Saltena Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Oscuro"></button>
+                            <button class="color-option" style="background-color: #95A5A6;" data-color="Gris"></button>
+                            <button class="color-option" style="background-color: #F39C12;" data-color="Mostaza"></button>
+                        </div>
+                        <p class="product-description">Jeans de denim de alta calidad con corte moderno y ajuste cómodo. Duraderos y con estilo contemporáneo.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Jeans Clásicos" data-price="49.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Spinach Empanada.jpg" alt="Vestido elegante para mujer con tejido fluido y patrón hermoso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Spinach Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #9B59B6;" data-color="Púrpura"></button>
+                            <button class="color-option" style="background-color: #E74C3C;" data-color="Rojo"></button>
+                            <button class="color-option" style="background-color: #1ABC9C;" data-color="Verde Agua"></button>
+                        </div>
+                        <p class="product-description">Vestido elegante con estampado floral y tejido suave que fluye con elegancia. Ideal para eventos especiales.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Vestido Floral" data-price="59.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Sweet Beef Empanada.jpg" alt="Chaqueta moderna para hombre con diseño elegante y aspecto premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sweet Beef Empanada</h3>
+                        <p class="product-price">$4.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris Oscuro"></button>
+                            <button class="color-option" style="background-color: #16A085;" data-color="Verde Oscuro"></button>
+                        </div>
+                        <p class="product-description">Chaqueta de diseño contemporáneo con materiales de alta calidad y acabados premium. Abrigada y con estilo.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Chaqueta Moderna" data-price="79.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/1 Dozen Empanadas.jpg" alt="Camiseta casual para mujer con ajuste cómodo y diseño simple">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">1 Dozen Empanadas</h3>
+                        <p class="product-price">$49.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FFFFFF; border: 1px solid #eee;" data-color="Blanco"></button>
+                            <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #E67E22;" data-color="Naranja"></button>
+                        </div>
+                        <p class="product-description">Camiseta de algodón 100% con ajuste cómodo y diseño versátil. Perfecta para uso diario y combinaciones casuales.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Camiseta Básica" data-price="19.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/6 Dozen Empanadas - 15% discount.jpg" alt="Pantalones formales clásicos para hombre con corte elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">6 Dozen Empanadas</h3>
+                        <p class="product-price">$299.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Marino"></button>
+                            <button class="color-option" style="background-color: #7D3C98;" data-color="Morado"></button>
+                            <button class="color-option" style="background-color: #1A5276;" data-color="Azul Oscuro"></button>
+                        </div>
+                        <p class="product-description">Pantalones de vestir con corte clásico y elegante confección. Ideales para ocasiones formales y de oficina.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Pantalones Formales" data-price="64.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Mozzarella Pizza.jpg" alt="Chaqueta moderna para hombre con diseño elegante y aspecto premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mozzarella Pizza</h3>
+                        <p class="product-price">$14.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #2C3E50;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #7F8C8D;" data-color="Gris Oscuro"></button>
+                            <button class="color-option" style="background-color: #16A085;" data-color="Verde Oscuro"></button>
+                        </div>
+                        <p class="product-description">Chaqueta de diseño contemporáneo con materiales de alta calidad y acabados premium. Abrigada y con estilo.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Chaqueta Moderna" data-price="79.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Napolitana Pizza.jpg" alt="Camiseta casual para mujer con ajuste cómodo y diseño simple">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Napolitana Pizza</h3>
+                        <p class="product-price">$14.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #FFFFFF; border: 1px solid #eee;" data-color="Blanco"></button>
+                            <button class="color-option" style="background-color: #000000;" data-color="Negro"></button>
+                            <button class="color-option" style="background-color: #E67E22;" data-color="Naranja"></button>
+                        </div>
+                        <p class="product-description">Camiseta de algodón 100% con ajuste cómodo y diseño versátil. Perfecta para uso diario y combinaciones casuales.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Camiseta Básica" data-price="19.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="dwimagenes/Pepperoni Pizza.jpg" alt="Pantalones formales clásicos para hombre con corte elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pepperoni Pizza</h3>
+                        <p class="product-price">$14.99</p>
+                        <div class="color-options">
+                            <span>Colores:</span>
+                            <button class="color-option" style="background-color: #34495E;" data-color="Azul Marino"></button>
+                            <button class="color-option" style="background-color: #7D3C98;" data-color="Morado"></button>
+                            <button class="color-option" style="background-color: #1A5276;" data-color="Azul Oscuro"></button>
+                        </div>
+                        <p class="product-description">Pantalones de vestir con corte clásico y elegante confección. Ideales para ocasiones formales y de oficina.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Pantalones Formales" data-price="64.99">Agregar al Carrito</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart-message" id="emptyCartMessage">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
